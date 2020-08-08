@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-rich-black-900 text-gray-200">
+    <header>
+      <!-- <app-bar></app-bar> -->
+      <div class="container">
+        <nav>
+          <div class="py-4 text-2xl font-bold tracking-wide">
+            CORONAVIRUS INFO
+          </div>
+          <div class="text-sm text-gray-500 -mt-5">
+            Last Updated: 9 August 2020
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mt-10">
+      <div class="container mb-5">
+        <form class="flex justify-center">
+          <input
+            type="text"
+            class="bg-transparent border-2 border-gray-500 py-1 px-3 rounded w-2/3 md:w-1/2"
+            placeholder="Search country or Global"
+          />
+          <input
+            type="button"
+            value="Search"
+            class="bg-transparent border-2 border-blue-500 text-blue-500 hover:text-gray-200 hover:bg-blue-500 cursor-pointer py-1 px-3 mx-2 rounded"
+          />
+        </form>
+      </div>
+
+      <div class="container">
+        <h1 class="text-2xl font-medium">Records</h1>
+        <div class="flex flex-wrap mb-5">
+          <app-bar
+            class="w-full md:w-1/2 lg:w-1/4 p-2"
+            colorClass="blue-700"
+            title="Confirmed"
+            whichState="confirmed"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
