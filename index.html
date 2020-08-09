@@ -3,21 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Coronavirus Info</title>
   </head>
   <body class="bg-rich-black-900 text-gray-200">
     <header>
-      <!-- <app-bar></app-bar> -->
-      <div class="container">
-        <nav>
-          <div class="py-4 text-2xl font-bold tracking-wide">
-            CORONAVIRUS INFO
-          </div>
-          <div class="text-sm text-gray-500 -mt-5">
-            Last Updated: 9 August 2020
-          </div>
-        </nav>
-      </div>
+      <nav>
+        <div class="container">
+          <app-bar></app-bar>
+        </div>
+      </nav>
     </header>
 
     <main class="mt-10">
@@ -38,14 +32,11 @@
 
       <div class="container">
         <h1 class="text-2xl font-medium">Records</h1>
-        <div class="flex flex-wrap mb-5">
-          <app-bar
-            class="w-full md:w-1/2 lg:w-1/4 p-2"
-            colorClass="blue-700"
-            title="Confirmed"
-            whichState="confirmed"
-          />
+        <div id="number-info-container" class="flex flex-wrap mb-5">
+          <!-- Number Info Here -->
         </div>
+
+        <country-records />
       </div>
     </main>
   </body>
