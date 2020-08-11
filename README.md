@@ -1,5 +1,7 @@
 # Coronavirus Info by Lutfi Andriyanto
 
+[Click Me](https://lutfiandri.github.io/covidinfo/)
+
 ## Project setup
 
 ```

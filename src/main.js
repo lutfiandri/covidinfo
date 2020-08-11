@@ -50,7 +50,7 @@ const getLocalDetail = () => {
             deaths: response.deaths.value,
           };
           countryRecordsTbody.innerHTML += `
-          <tr>
+          <tr class="hover:bg-rich-black-800">
             <td class="border border-gray-200 px-4 py-2">${state.name}</td>
             <td class="border border-gray-200 px-4 py-2">${state.confirmed}</td>
             <td class="border border-gray-200 px-4 py-2">${state.inCure}</td>
