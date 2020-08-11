@@ -15,28 +15,19 @@
     </header>
 
     <main class="mt-10">
-      <div class="container mb-5">
-        <form class="flex justify-center">
-          <input
-            type="text"
-            class="bg-transparent border-2 border-gray-500 py-1 px-3 rounded w-2/3 md:w-1/2"
-            placeholder="Search country or Global"
-          />
-          <input
-            type="button"
-            value="Search"
-            class="bg-transparent border-2 border-blue-500 text-blue-500 hover:text-gray-200 hover:bg-blue-500 cursor-pointer py-1 px-3 mx-2 rounded"
-          />
-        </form>
-      </div>
-
       <div class="container">
-        <h1 class="text-2xl font-medium">Records</h1>
+        <h1 class="text-2xl font-medium">Global Records</h1>
         <div id="number-info-container" class="flex flex-wrap mb-5">
           <!-- Number Info Here -->
         </div>
 
-        <country-records />
+        <h1 class="text-2xl font-medium">Country Records</h1>
+        <div
+          id="country-records-container"
+          class="w-full xl:w-3/4 overflow-auto mb-5 mx-auto"
+        >
+          <country-records />
+        </div>
       </div>
     </main>
   </body>

@@ -18,7 +18,7 @@ class Local {
     return fetch(`${baseURL}/countries/${country}`)
       .then((response) => response.json())
       .then((responseJson) => responseJson)
-      .catch((err) => alert(err));
+      .catch((err) => console.log(err));
   }
 }
 

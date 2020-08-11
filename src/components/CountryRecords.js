@@ -5,7 +5,6 @@ class CountryRecords extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <div class="w-full xl:w-3/4 overflow-auto mb-5 mx-auto">
     <table class="table-auto w-full">
       <thead>
         <tr>
@@ -17,16 +16,8 @@ class CountryRecords extends HTMLElement {
         </tr>
       </thead>
       <tbody>
-        <tr class="hover:bg-rich-black-800">
-          <td class="border border-gray-200 px-4 py-2">Indonesia</td>
-          <td class="border border-gray-200 px-4 py-2">2837234</td>
-          <td class="border border-gray-200 px-4 py-2">1452458</td>
-          <td class="border border-gray-200 px-4 py-2">852348</td>
-          <td class="border border-gray-200 px-4 py-2">852348</td>
-        </tr>
       </tbody>
     </table>
-    </div>
     `;
   }
 }

@@ -33,13 +33,14 @@ const getGlobal = () => {
 
 const getLocalDetail = () => {
   Local.getCountries().then((response) => {
-    let countries = [];
+    const countryRecordsTbody = document.querySelector('country-records tbody');
+    countryRecordsTbody.innerHTML = '';
     response.forEach((country) => {
       Local.getCountryDetail(country).then((response) => {
         // console.log('res', response);
         if (!response.hasOwnProperty('error')) {
-          let state = {
-            country: country,
+          const state = {
+            name: country,
             confirmed: response.confirmed.value,
             inCure:
               response.confirmed.value -
@@ -48,11 +49,18 @@ const getLocalDetail = () => {
             recovered: response.recovered.value,
             deaths: response.deaths.value,
           };
-          countries.push(state);
+          countryRecordsTbody.innerHTML += `
+          <tr>
+            <td class="border border-gray-200 px-4 py-2">${state.name}</td>
+            <td class="border border-gray-200 px-4 py-2">${state.confirmed}</td>
+            <td class="border border-gray-200 px-4 py-2">${state.inCure}</td>
+            <td class="border border-gray-200 px-4 py-2">${state.recovered}</td>
+            <td class="border border-gray-200 px-4 py-2">${state.deaths}</td>
+          </tr>
+          `;
         }
       });
     });
-    return countries;
   });
 };
 
